@@ -116,4 +116,3 @@ All simulated features are clearly marked in the UI with banners.
 ## License
 
 This project is for educational purposes.
-
