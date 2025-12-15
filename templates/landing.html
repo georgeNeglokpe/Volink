@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %}Volink - Student Volunteering Platform{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto">
+    <!-- Hero Section -->
+    <div class="text-center py-16">
+        <h1 class="text-5xl font-bold text-gray-900 mb-4">Volink</h1>
+        <p class="text-2xl text-gray-600 mb-8">Intelligent Volunteer Matching for Students</p>
+        <p class="text-lg text-gray-500 max-w-2xl mx-auto mb-8">
+            Connect with meaningful volunteering opportunities that match your skills, interests, and schedule. 
+            Our backend-driven platform uses intelligent matching to help you find the perfect volunteer role.
+        </p>
+        <div class="space-x-4">
+            {% if user.is_authenticated %}
+                {% if user.is_volunteer %}
+                    <a href="{% url 'volunteers:dashboard' %}" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 font-semibold">Go to Dashboard</a>
+                {% elif user.is_org_admin %}
+                    <a href="{% url 'organisations:dashboard' %}" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 font-semibold">Go to Dashboard</a>
+                {% endif %}
+            {% else %}
+                <a href="{% url 'accounts:register' %}" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 font-semibold">Get Started</a>
+                <a href="{% url 'accounts:login' %}" class="bg-white text-blue-600 px-8 py-3 rounded-lg border-2 border-blue-600 hover:bg-blue-50 font-semibold">Login</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="grid md:grid-cols-3 gap-8 mt-16">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-blue-600 text-4xl mb-4">🎯</div>
+            <h3 class="text-xl font-semibold mb-2">Smart Matching</h3>
+            <p class="text-gray-600">
+                Our intelligent algorithm matches you with opportunities based on your skills, interests, and availability.
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-blue-600 text-4xl mb-4">📅</div>
+            <h3 class="text-xl font-semibold mb-2">Schedule-Aware</h3>
+            <p class="text-gray-600">
+                Never overcommit. Our system tracks your hours and prevents scheduling conflicts automatically.
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-blue-600 text-4xl mb-4">📊</div>
+            <h3 class="text-xl font-semibold mb-2">Track Your Impact</h3>
+            <p class="text-gray-600">
+                Log your hours and see your contribution to causes you care about with detailed analytics.
+            </p>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <div class="mt-16 bg-white p-8 rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold text-center mb-8">How It Works</h2>
+        <div class="grid md:grid-cols-4 gap-6">
+            <div class="text-center">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-blue-600">1</span>
+                </div>
+                <h4 class="font-semibold mb-2">Create Profile</h4>
+                <p class="text-sm text-gray-600">Set up your profile with skills, interests, and availability</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-blue-600">2</span>
+                </div>
+                <h4 class="font-semibold mb-2">Get Matched</h4>
+                <p class="text-sm text-gray-600">Receive personalized recommendations based on your profile</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-blue-600">3</span>
+                </div>
+                <h4 class="font-semibold mb-2">Apply & Volunteer</h4>
+                <p class="text-sm text-gray-600">Apply to opportunities and start making a difference</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-blue-600">4</span>
+                </div>
+                <h4 class="font-semibold mb-2">Track Impact</h4>
+                <p class="text-sm text-gray-600">Log hours and see your contribution grow</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

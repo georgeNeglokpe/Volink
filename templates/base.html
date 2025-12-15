@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Volink - Volunteer Platform{% endblock %}</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    {% block extra_css %}{% endblock %}
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <a href="{% url 'landing' %}" class="text-2xl font-bold">Volink</a>
+                    {% if user.is_authenticated %}
+                        {% if user.is_volunteer %}
+                            <a href="{% url 'volunteers:dashboard' %}" class="hover:text-blue-200">Dashboard</a>
+                            <a href="{% url 'opportunities:browse' %}" class="hover:text-blue-200">Browse</a>
+                            <a href="{% url 'volunteers:recommended' %}" class="hover:text-blue-200">Recommended</a>
+                            <a href="{% url 'volunteers:my_schedule' %}" class="hover:text-blue-200">My Schedule</a>
+                        {% elif user.is_org_admin %}
+                            <a href="{% url 'organisations:dashboard' %}" class="hover:text-blue-200">Dashboard</a>
+                            <a href="{% url 'opportunities:list' %}" class="hover:text-blue-200">My Opportunities</a>
+                        {% endif %}
+                    {% endif %}
+                </div>
+                <div class="flex items-center space-x-4">
+                    {% if user.is_authenticated %}
+                        <!-- Notifications Dropdown -->
+                        <div class="relative" id="notifications-dropdown">
+                            <button onclick="toggleNotifications()" class="relative hover:text-blue-200">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+                                </svg>
+                                <span id="notification-badge" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden">0</span>
+                            </button>
+                            <div id="notifications-menu" class="hidden absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl z-50 border border-gray-200">
+                                <div class="p-4 border-b">
+                                    <h3 class="font-semibold text-gray-800">Notifications</h3>
+                                </div>
+                                <div id="notifications-list" class="max-h-96 overflow-y-auto">
+                                    <div class="p-4 text-gray-500 text-center">Loading...</div>
+                                </div>
+                                <div class="p-2 border-t">
+                                    <a href="{% url 'notifications:list' %}" class="block text-center text-blue-600 hover:text-blue-800 text-sm">View all</a>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-blue-200">Hello, {{ user.username }}</span>
+                        <a href="{% url 'accounts:logout' %}" class="hover:text-blue-200">Logout</a>
+                    {% else %}
+                        <a href="{% url 'accounts:login' %}" class="hover:text-blue-200">Login</a>
+                        <a href="{% url 'accounts:register' %}" class="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800">Register</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Messages -->
+    {% if messages %}
+        <div class="container mx-auto px-4 mt-4">
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} bg-{% if message.tags == 'error' %}red{% elif message.tags == 'success' %}green{% else %}blue{% endif %}-100 border border-{% if message.tags == 'error' %}red{% elif message.tags == 'success' %}green{% else %}blue{% endif %}-400 text-{% if message.tags == 'error' %}red{% elif message.tags == 'success' %}green{% else %}blue{% endif %}-700 px-4 py-3 rounded mb-4" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 py-6">
+            <div class="text-center">
+                <p>&copy; 2024 Volink. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notifications JavaScript -->
+    <script>
+        function toggleNotifications() {
+            const menu = document.getElementById('notifications-menu');
+            menu.classList.toggle('hidden');
+            if (!menu.classList.contains('hidden')) {
+                loadNotifications();
+            }
+        }
+
+        function loadNotifications() {
+            fetch('{% url "notifications:count" %}')
+                .then(response => response.json())
+                .then(data => {
+                    const badge = document.getElementById('notification-badge');
+                    if (data.count > 0) {
+                        badge.textContent = data.count;
+                        badge.classList.remove('hidden');
+                    } else {
+                        badge.classList.add('hidden');
+                    }
+                });
+        }
+
+        // Close notifications when clicking outside
+        document.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('notifications-dropdown');
+            const menu = document.getElementById('notifications-menu');
+            if (dropdown && menu && !dropdown.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+    {% if user.is_authenticated %}
+    <script>
+        // Load notification count on page load
+        document.addEventListener('DOMContentLoaded', loadNotifications);
+    </script>
+    {% endif %}
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
+

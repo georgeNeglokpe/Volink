@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Profile - Volink{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto">
+    <div class="bg-white rounded-lg shadow-md p-8">
+        <h1 class="text-3xl font-bold mb-6">Edit Profile</h1>
+        
+        <form method="post" class="space-y-4">
+            {% csrf_token %}
+            <div>
+                <label for="skills" class="block text-sm font-medium text-gray-700 mb-1">Skills</label>
+                <textarea name="skills" id="skills" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg">{{ profile.skills }}</textarea>
+                <p class="text-xs text-gray-500 mt-1">List your skills (comma-separated or free text)</p>
+            </div>
+            <div>
+                <label for="interests" class="block text-sm font-medium text-gray-700 mb-1">Interests</label>
+                <textarea name="interests" id="interests" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg">{{ profile.interests }}</textarea>
+                <p class="text-xs text-gray-500 mt-1">List your interests and preferences</p>
+            </div>
+            <div>
+                <label for="max_hours_per_week" class="block text-sm font-medium text-gray-700 mb-1">Max Hours per Week</label>
+                <input type="number" name="max_hours_per_week" id="max_hours_per_week" value="{{ profile.max_hours_per_week }}" min="0" required class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+            </div>
+            <div class="mt-6">
+                <h3 class="font-semibold text-gray-700 mb-2">Availability (Optional)</h3>
+                <p class="text-xs text-gray-500 mb-4">Select days you're available</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="availability_monday" id="availability_monday" {% if 'monday' in profile.availability %}checked{% endif %} class="mr-2">
+                        <label for="availability_monday" class="text-sm text-gray-700">Monday</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" name="availability_tuesday" id="availability_tuesday" {% if 'tuesday' in profile.availability %}checked{% endif %} class="mr-2">
+                        <label for="availability_tuesday" class="text-sm text-gray-700">Tuesday</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" name="availability_wednesday" id="availability_wednesday" {% if 'wednesday' in profile.availability %}checked{% endif %} class="mr-2">
+                        <label for="availability_wednesday" class="text-sm text-gray-700">Wednesday</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" name="availability_thursday" id="availability_thursday" {% if 'thursday' in profile.availability %}checked{% endif %} class="mr-2">
+                        <label for="availability_thursday" class="text-sm text-gray-700">Thursday</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" name="availability_friday" id="availability_friday" {% if 'friday' in profile.availability %}checked{% endif %} class="mr-2">
+                        <label for="availability_friday" class="text-sm text-gray-700">Friday</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" name="availability_saturday" id="availability_saturday" {% if 'saturday' in profile.availability %}checked{% endif %} class="mr-2">
+                        <label for="availability_saturday" class="text-sm text-gray-700">Saturday</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" name="availability_sunday" id="availability_sunday" {% if 'sunday' in profile.availability %}checked{% endif %} class="mr-2">
+                        <label for="availability_sunday" class="text-sm text-gray-700">Sunday</label>
+                    </div>
+                </div>
+            </div>
+            <div class="flex space-x-4 mt-6">
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Save Profile</button>
+                <a href="{% url 'volunteers:dashboard' %}" class="bg-gray-200 text-gray-800 px-6 py-2 rounded-lg hover:bg-gray-300">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+

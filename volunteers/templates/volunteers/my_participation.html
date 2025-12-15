@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}My Participation - Volink{% endblock %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto">
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold">My Participation</h1>
+        <div class="bg-blue-100 border border-blue-200 rounded-lg p-4">
+            <p class="text-sm text-blue-800"><strong>Total Hours Logged:</strong> {{ total_hours|floatformat:1 }} hours</p>
+        </div>
+    </div>
+    
+    <!-- Hours by Opportunity Chart Placeholder -->
+    {% if hours_by_opportunity %}
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">Hours by Opportunity</h2>
+            <div class="space-y-3">
+                {% for item in hours_by_opportunity %}
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium text-gray-700">{{ item.opportunity__title|truncatewords:5 }}</span>
+                            <span class="text-sm text-gray-600">{{ item.total_hours|floatformat:1 }} hours</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: {% widthratio item.total_hours total_hours 100 %}%"></div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+    
+    <!-- Participation Records -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="p-6 border-b">
+            <h2 class="text-xl font-semibold">Participation Records</h2>
+        </div>
+        {% if records %}
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Opportunity</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Hours</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Notes</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    {% for record in records %}
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ record.date|date:"M d, Y" }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">{{ record.opportunity.title }}</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ record.hours_logged }} hours
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500">
+                                {{ record.notes|truncatewords:10|default:"—" }}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="p-12 text-center">
+                <p class="text-gray-500 text-lg">No participation records yet.</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ opportunity.title }} - Volink{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <div class="bg-white rounded-lg shadow-md p-8">
+        <h1 class="text-3xl font-bold mb-4">{{ opportunity.title }}</h1>
+        
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">Organisation</h2>
+            <p class="text-gray-700">{{ opportunity.organisation.name }}</p>
+            {% if opportunity.organisation.description %}
+                <p class="text-gray-600 mt-2">{{ opportunity.organisation.description }}</p>
+            {% endif %}
+            {% if opportunity.organisation.contact_email %}
+                <p class="text-sm text-gray-500 mt-1">Contact: {{ opportunity.organisation.contact_email }}</p>
+            {% endif %}
+        </div>
+        
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">Description</h2>
+            <p class="text-gray-700 whitespace-pre-wrap">{{ opportunity.description }}</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-4 mb-6">
+            <div>
+                <h3 class="font-semibold text-gray-700">Location</h3>
+                <p>{{ opportunity.location }}</p>
+                {% if opportunity.is_remote %}
+                    <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded mt-1">Remote</span>
+                {% endif %}
+            </div>
+            <div>
+                <h3 class="font-semibold text-gray-700">Category</h3>
+                <p>{{ opportunity.get_category_display }}</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-gray-700">Hours per Week</h3>
+                <p>{{ opportunity.min_hours_per_week }} hours</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-gray-700">Duration</h3>
+                <p>{{ opportunity.start_date }} to {{ opportunity.end_date }}</p>
+            </div>
+        </div>
+        
+        <div class="mb-6">
+            <h3 class="font-semibold text-gray-700 mb-2">Required Skills</h3>
+            <p class="text-gray-700 whitespace-pre-wrap">{{ opportunity.required_skills }}</p>
+        </div>
+        
+        <div class="border-t pt-6">
+            {% if user.is_authenticated and user.is_volunteer %}
+                {% if user_application %}
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <p class="font-semibold text-blue-800">Application Status: {{ user_application.get_status_display }}</p>
+                        <p class="text-sm text-blue-600 mt-1">Applied on {{ user_application.created_at|date:"F d, Y" }}</p>
+                    </div>
+                {% else %}
+                    <form method="post" action="{% url 'opportunities:apply' opportunity.pk %}">
+                        {% csrf_token %}
+                        <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 font-semibold">Apply Now</button>
+                    </form>
+                {% endif %}
+            {% elif not user.is_authenticated %}
+                <p class="text-gray-600 mb-4">Please <a href="{% url 'accounts:login' %}" class="text-blue-600 hover:text-blue-800">login</a> to apply for this opportunity.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+

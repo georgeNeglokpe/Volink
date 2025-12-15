@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %}My Schedule - Volink{% endblock %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6">My Schedule</h1>
+    
+    <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <div class="grid md:grid-cols-3 gap-4">
+            <div>
+                <h3 class="text-sm font-medium text-gray-700">Total Weekly Hours</h3>
+                <p class="text-2xl font-bold text-blue-600">{{ schedule.total_hours }}</p>
+            </div>
+            <div>
+                <h3 class="text-sm font-medium text-gray-700">Max Hours/Week</h3>
+                <p class="text-2xl font-bold text-purple-600">{{ schedule.max_hours }}</p>
+            </div>
+            <div>
+                <h3 class="text-sm font-medium text-gray-700">Remaining Capacity</h3>
+                <p class="text-2xl font-bold {% if schedule.remaining_capacity < 0 %}text-red-600{% else %}text-green-600{% endif %}">
+                    {{ schedule.remaining_capacity }}
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    {% if schedule.opportunities %}
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Opportunity</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Organisation</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Hours/Week</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Duration</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    {% for item in schedule.opportunities %}
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">{{ item.opportunity.title }}</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ item.opportunity.organisation.name }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ item.hours_per_week }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ item.start_date|date:"M d" }} - {{ item.end_date|date:"M d, Y" }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="{% url 'opportunities:detail' item.opportunity.pk %}" class="text-blue-600 hover:text-blue-900">View</a>
+                                <a href="{% url 'volunteers:log_hours' item.opportunity.pk %}" class="ml-3 text-green-600 hover:text-green-900">Log Hours</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <div class="bg-white rounded-lg shadow-md p-12 text-center">
+            <p class="text-gray-500 text-lg mb-4">No active opportunities in your schedule.</p>
+            <a href="{% url 'opportunities:browse' %}" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Browse Opportunities</a>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
+

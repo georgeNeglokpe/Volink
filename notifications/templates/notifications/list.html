@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}Notifications - Volink{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold">Notifications</h1>
+        {% if unread_notifications %}
+            <form method="post" action="{% url 'notifications:mark_all_read' %}" class="inline">
+                {% csrf_token %}
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-sm">Mark All as Read</button>
+            </form>
+        {% endif %}
+    </div>
+    
+    <!-- Unread Notifications -->
+    {% if unread_notifications %}
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Unread</h2>
+            <div class="space-y-3">
+                {% for notification in unread_notifications %}
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg">
+                        <div class="flex justify-between items-start">
+                            <div class="flex-1">
+                                <p class="text-gray-800">{{ notification.message }}</p>
+                                <p class="text-xs text-gray-500 mt-1">{{ notification.created_at|date:"M d, Y H:i" }}</p>
+                            </div>
+                            <form method="post" action="{% url 'notifications:mark_read' notification.pk %}" class="ml-4">
+                                {% csrf_token %}
+                                <button type="submit" class="text-blue-600 hover:text-blue-800 text-sm">Mark as read</button>
+                            </form>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+    
+    <!-- Read Notifications -->
+    {% if read_notifications %}
+        <div>
+            <h2 class="text-xl font-semibold mb-4">Read</h2>
+            <div class="space-y-3">
+                {% for notification in read_notifications %}
+                    <div class="bg-gray-50 border-l-4 border-gray-300 p-4 rounded-lg">
+                        <p class="text-gray-600">{{ notification.message }}</p>
+                        <p class="text-xs text-gray-400 mt-1">Read on {{ notification.read_at|date:"M d, Y H:i" }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+    
+    {% if not unread_notifications and not read_notifications %}
+        <div class="bg-white rounded-lg shadow-md p-12 text-center">
+            <p class="text-gray-500 text-lg">No notifications yet.</p>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
+
