@@ -8,6 +8,7 @@ from .models import Opportunity, Application
 from .forms import OpportunityForm, ApplicationForm
 from organisations.models import Organisation
 from notifications.models import Notification
+from volunteers.scheduling import check_hours_limit, get_volunteer_schedule
 
 
 def is_org_admin(user):
@@ -63,6 +64,7 @@ def opportunity_detail(request, pk):
     
     # Check if user has applied
     user_application = None
+    hours_limit_info = None
     if request.user.is_authenticated:
         try:
             user_application = Application.objects.get(
@@ -71,10 +73,27 @@ def opportunity_detail(request, pk):
             )
         except Application.DoesNotExist:
             pass
+        
+        # Check hours limit for volunteers (to show warning if applicable)
+        if request.user.is_volunteer() and not user_application:
+            can_apply, current_hours, would_be_hours = check_hours_limit(request.user, opportunity)
+            try:
+                profile = request.user.volunteer_profile
+                max_hours = profile.max_hours_per_week
+            except:
+                max_hours = 0
+            
+            hours_limit_info = {
+                'can_apply': can_apply,
+                'current_hours': current_hours,
+                'would_be_hours': would_be_hours,
+                'max_hours': max_hours,
+            }
     
     context = {
         'opportunity': opportunity,
         'user_application': user_application,
+        'hours_limit_info': hours_limit_info,
     }
     return render(request, 'opportunities/detail.html', context)
 
@@ -93,6 +112,24 @@ def apply_to_opportunity(request, pk):
     # Check if opportunity is open
     if opportunity.status != 'OPEN':
         messages.error(request, 'This opportunity is not currently open for applications.')
+        return redirect('opportunities:detail', pk=pk)
+    
+    # Check hours limit before allowing application
+    can_apply, current_hours, would_be_hours = check_hours_limit(request.user, opportunity)
+    if not can_apply:
+        try:
+            profile = request.user.volunteer_profile
+            max_hours = profile.max_hours_per_week
+        except:
+            max_hours = 0
+        
+        messages.error(
+            request,
+            f'Cannot apply: This opportunity would exceed your weekly hours limit. '
+            f'You currently have {current_hours} hours/week committed (max: {max_hours} hours/week). '
+            f'This opportunity requires {opportunity.min_hours_per_week} hours/week, '
+            f'which would bring you to {would_be_hours} hours/week.'
+        )
         return redirect('opportunities:detail', pk=pk)
     
     if request.method == 'POST':
@@ -232,11 +269,43 @@ def view_applications(request, pk):
         messages.error(request, 'You do not have permission to view these applications.')
         return redirect('opportunities:list')
     
-    applications = Application.objects.filter(opportunity=opportunity).order_by('-created_at')
+    applications = Application.objects.filter(opportunity=opportunity).select_related('volunteer', 'volunteer__volunteer_profile').order_by('-created_at')
+    
+    # Calculate hours information for each application
+    applications_with_hours = []
+    for application in applications:
+        volunteer = application.volunteer
+        schedule = get_volunteer_schedule(volunteer)
+        
+        current_hours = schedule['total_hours']
+        max_hours = schedule['max_hours']
+        remaining_hours = schedule['remaining_capacity']
+        
+        # Calculate what hours would be if this application is accepted
+        hours_for_this = opportunity.min_hours_per_week
+        if application.status == 'ACCEPTED':
+            # If already accepted, current_hours already includes this opportunity
+            would_be_hours = current_hours
+        else:
+            # If pending/rejected, calculate what it would be if accepted
+            would_be_hours = current_hours + hours_for_this
+        
+        # Check if accepting would exceed limit
+        would_exceed = would_be_hours > max_hours if max_hours > 0 else False
+        
+        applications_with_hours.append({
+            'application': application,
+            'current_hours': current_hours,
+            'max_hours': max_hours,
+            'remaining_hours': remaining_hours,
+            'hours_for_this': hours_for_this,
+            'would_be_hours': would_be_hours,
+            'would_exceed': would_exceed,
+        })
     
     context = {
         'opportunity': opportunity,
-        'applications': applications,
+        'applications_with_hours': applications_with_hours,
     }
     return render(request, 'opportunities/applications.html', context)
 
