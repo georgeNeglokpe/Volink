@@ -50,7 +50,10 @@
                             </div>
                         </div>
                         <span class="text-blue-200">Hello, {{ user.username }}</span>
-                        <a href="{% url 'accounts:logout' %}" class="hover:text-blue-200">Logout</a>
+                        <form method="post" action="{% url 'accounts:logout' %}" class="inline">
+                            {% csrf_token %}
+                            <button type="submit" class="hover:text-blue-200 bg-transparent border-none text-white cursor-pointer">Logout</button>
+                        </form>
                     {% else %}
                         <a href="{% url 'accounts:login' %}" class="hover:text-blue-200">Login</a>
                         <a href="{% url 'accounts:register' %}" class="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800">Register</a>

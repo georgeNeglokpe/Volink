@@ -1,6 +1,6 @@
 # Volink - Intelligent Volunteer Matching Platform
 
-Volink is a web-based volunteering platform designed for university contexts, connecting students with meaningful volunteering opportunities through intelligent backend-driven matching.
+Volink is a web-based volunteering platform designed for university contexts, connecting students with meaningful volunteering opportunities through intelligent skill based matching.
 
 ## Features
 
@@ -113,6 +113,4 @@ Some features are simulated for demonstration:
 
 All simulated features are clearly marked in the UI with banners.
 
-## License
-
-This project is for educational purposes.
+ 

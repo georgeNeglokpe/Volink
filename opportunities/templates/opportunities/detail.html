@@ -58,10 +58,29 @@
                         <p class="text-sm text-blue-600 mt-1">Applied on {{ user_application.created_at|date:"F d, Y" }}</p>
                     </div>
                 {% else %}
-                    <form method="post" action="{% url 'opportunities:apply' opportunity.pk %}">
-                        {% csrf_token %}
-                        <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 font-semibold">Apply Now</button>
-                    </form>
+                    {% if hours_limit_info and not hours_limit_info.can_apply %}
+                        <div class="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
+                            <p class="font-semibold text-red-800 mb-2">⚠️ Cannot Apply - Hours Limit Exceeded</p>
+                            <p class="text-sm text-red-700">
+                                This opportunity would exceed your weekly hours limit. 
+                                You currently have <strong>{{ hours_limit_info.current_hours }} hours/week</strong> committed 
+                                (max: <strong>{{ hours_limit_info.max_hours }} hours/week</strong>). 
+                                This opportunity requires <strong>{{ opportunity.min_hours_per_week }} hours/week</strong>, 
+                                which would bring you to <strong>{{ hours_limit_info.would_be_hours }} hours/week</strong>.
+                            </p>
+                            <p class="text-sm text-red-600 mt-2">
+                                Please check your <a href="{% url 'volunteers:my_schedule' %}" class="underline">schedule</a> 
+                                or adjust your <a href="{% url 'volunteers:edit_profile' %}" class="underline">profile</a> 
+                                to increase your max hours per week.
+                            </p>
+                        </div>
+                        <button type="button" disabled class="bg-gray-400 text-white px-8 py-3 rounded-lg cursor-not-allowed font-semibold">Apply Now (Disabled)</button>
+                    {% else %}
+                        <form method="post" action="{% url 'opportunities:apply' opportunity.pk %}">
+                            {% csrf_token %}
+                            <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 font-semibold">Apply Now</button>
+                        </form>
+                    {% endif %}
                 {% endif %}
             {% elif not user.is_authenticated %}
                 <p class="text-gray-600 mb-4">Please <a href="{% url 'accounts:login' %}" class="text-blue-600 hover:text-blue-800">login</a> to apply for this opportunity.</p>

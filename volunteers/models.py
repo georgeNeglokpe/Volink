@@ -21,7 +21,7 @@ class VolunteerProfile(models.Model):
         help_text='Availability schedule (JSON format: days/times)'
     )
     interests = models.TextField(
-        help_text='Interests and preferences (comma-separated or free text)'
+        help_text='Interests, course, and department (comma-separated or free text)'
     )
     max_hours_per_week = models.IntegerField(
         default=10,

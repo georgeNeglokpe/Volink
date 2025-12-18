@@ -66,6 +66,7 @@ def get_volunteer_schedule(volunteer):
             'opportunities': [],
             'total_hours': 0,
             'max_hours': 0,
+            'remaining_capacity': 0,
         }
     
     # Get all accepted applications

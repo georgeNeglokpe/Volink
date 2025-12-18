@@ -279,7 +279,7 @@ def view_applications(request, pk):
         
         current_hours = schedule['total_hours']
         max_hours = schedule['max_hours']
-        remaining_hours = schedule['remaining_capacity']
+        remaining_hours = schedule.get('remaining_capacity', max_hours - current_hours)
         
         # Calculate what hours would be if this application is accepted
         hours_for_this = opportunity.min_hours_per_week
