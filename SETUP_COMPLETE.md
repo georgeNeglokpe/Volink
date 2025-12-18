@@ -51,8 +51,8 @@
 ✅ All tests passing
 ✅ Ready for development and testing
 
-For testing (database cloned)
-# First run migrations on the new system
+#For testing (database cloned)
+First run migrations on the new system
 python manage.py migrate
 
 # Then load the data
