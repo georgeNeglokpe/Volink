@@ -1,1473 +1,1473 @@
-﻿[ 
-{
-  "model": "admin.logentry",
-  "pk": 1,
-  "fields": {
-    "action_time": "2025-12-13T08:59:36.530Z",
-    "user": 1,
-    "content_type": 6,
-    "object_id": "3",
-    "object_repr": "orgadmin (Organisation Admin)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 2,
-  "fields": {
-    "action_time": "2025-12-13T09:00:55.189Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "1",
-    "object_repr": "Test NGO",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 3,
-  "fields": {
-    "action_time": "2025-12-13T09:06:02.738Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "1",
-    "object_repr": "Opportunity 1 - Test NGO",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 4,
-  "fields": {
-    "action_time": "2025-12-13T09:19:51.646Z",
-    "user": 1,
-    "content_type": 6,
-    "object_id": "4",
-    "object_repr": "org2Admin (Organisation Admin)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 5,
-  "fields": {
-    "action_time": "2025-12-13T09:20:29.719Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "2",
-    "object_repr": "Org 2 Health",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 6,
-  "fields": {
-    "action_time": "2025-12-13T09:52:10.045Z",
-    "user": 1,
-    "content_type": 6,
-    "object_id": "2",
-    "object_repr": "testvolunteer (Volunteer)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "1wdu5aynegoymbwxzgsipsolfc4wwq0m",
-  "fields": {
-    "session_data": ".eJxVjMsOwiAQRf-FtSGMPAou3fcbCMwMUjU0Ke3K-O_apAvd3nPOfYmYtrXGrfMSJxIXAUGcfsec8MFtJ3RP7TZLnNu6TFnuijxol-NM_Lwe7t9BTb1-a9YeSsFzATSgLLqQAUgj28FjcFSUJh30ULInk8kmCAzJW0UlgzMs3h8bFzic:1vV9xz:AGM-WJWG4hEQ3af-c01G1gVop7lIcClAQ9_6CTFQSI0",
-    "expire_date": "2025-12-29T14:54:27.212Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "jfu261y4suxavhiduqhsra2n8u6xle5v",
-  "fields": {
-    "session_data": ".eJxVjEsOwiAUAO_C2pBCeXxcuu8ZyAMeUjWQlHZlvLsh6UK3M5N5M4_HXvzRafNrYlcm2OWXBYxPqkOkB9Z747HVfVsDHwk_bedLS_S6ne3foGAvYwsS5oAzoDEGQZGbJ7BaBQsUNUUl02RA6KyCAxe0EVLZjJQdGEEus88XvPs3Lw:1vULRv:wY5vwmqQy5BiHX6REzua_s7YfD05p0akb1vxVd3s3OA",
-    "expire_date": "2025-12-27T08:57:59.227Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "svifjt17twimcgoxoyyc5xg00dmqjeip",
-  "fields": {
-    "session_data": ".eJxVjDsOwjAQBe_iGllr_IWSnjNYu14bB5AtxUmFuDtESgHtm5n3EhHXpcZ15DlOLM5CWXH4HQnTI7eN8B3brcvU2zJPJDdF7nTIa-f8vOzu30HFUb81mIIaksusPRskctYxQoZgELMi5KBNgsJHRSVAKGS1Daj8SSVPjsT7Ayt4ONo:1vVEJA:dgxQKhlCzPjd6OOxeMZZX5S--fhJDTGNLQ6lXxv-l6Y",
-    "expire_date": "2025-12-29T19:32:36.488Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "tymytb6mhapsiwrdn5rdj6xbrbufmc1v",
-  "fields": {
-    "session_data": ".eJxVjDsOwjAQRO_iGln-xD9K-pzB2vU6OIAcKU4qxN2JpRTQjEbzZubNIuxbiXvLa5yJXZlml98MIT1z7YAeUO8LT0vd1hl5r_CTNj4ulF-3s_t3UKCVY-2Ed9KCBu0xk82kg5gGk0wSAdAfiiS9DGS8QkWDcFpNshthQwbHPl_ajDdt:1vULQE:NWJa28kacbX9qxVqBv8nWTcDYKY44OHbrPEZuq0V5kE",
-    "expire_date": "2025-12-27T08:56:14.412Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "v8lw0sgkmahrcvlmjguvzj63k7ywn7rh",
-  "fields": {
-    "session_data": ".eJxVjMsOwiAQRf-FtSE86gy4dN9vIANDpWogKe3K-O_apAvd3nPOfYlA21rC1vMSZhYXYZQ4_Y6R0iPXnfCd6q3J1Oq6zFHuijxol2Pj_Lwe7t9BoV6-dXLReeUALXoP-eyIJ2MsqoQ0gEfFDuIEGZQ25AE524FAJwNIGqMV7w_lJjcw:1vVE90:H3gss0RPEwVS_QEoVuIP_gNwcH4yD9TQf1tdGASRMaQ",
-    "expire_date": "2025-12-29T19:22:06.863Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "wmxpu5vtvgplq1iphawi3uacg831g6dv",
-  "fields": {
-    "session_data": ".eJxVjEEOwiAQRe_C2hCEDoJL956BzDBTqRpISrsy3l2bdKHb_977L5VwXUpau8xpYnVWVh1-N8L8kLoBvmO9NZ1bXeaJ9KbonXZ9bSzPy-7-HRTs5VsboaNDMGBQwNkhWnGCLOItDWYMFD2wjDmcJEMmjBiNteTJgQsMqN4f9BU4gw:1vULNe:ojIw_MDaJIGjyxWTqbNHXcFOdM0yu_3wrzVDWK2XJCo",
-    "expire_date": "2025-12-27T08:53:34.492Z"
-  }
-},
-{
-  "model": "accounts.user",
-  "pk": 1,
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$r7eXtSZuGImAlfZTXgBz7h$Prn+X5SJPpsR6EpXlBfBxMXt4gYOD8UcIwYghzdPzFo=",
-    "last_login": "2025-12-13T08:57:59.222Z",
-    "is_superuser": true,
-    "username": "admin",
-    "first_name": "",
-    "last_name": "",
-    "email": "admin@volink.com",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2025-12-13T08:43:03.088Z",
-    "role": "STAFF_ADMIN",
-    "phone": null,
-    "course_department": null,
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "accounts.user",
-  "pk": 2,
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$hqIER7FuffvQxgl1BbYh6d$TFY3qSH3XJMmZOR4eKRfzEla/qS/+pM2I9itfXh5pTI=",
-    "last_login": "2025-12-13T08:53:34Z",
-    "is_superuser": false,
-    "username": "testvolunteer",
-    "first_name": "Volunteer",
-    "last_name": "Wan",
-    "email": "volunteer@test.com",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-12-13T08:53:33Z",
-    "role": "VOLUNTEER",
-    "phone": "0712345678",
-    "course_department": null,
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "accounts.user",
-  "pk": 3,
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$ICctQB8eM4ZlRHTAfjPJ4P$/DafMoUUlUte1kG/awomwljnrGhRRyzrSF+P71/jnKw=",
-    "last_login": "2025-12-13T08:56:14Z",
-    "is_superuser": false,
-    "username": "orgadmin",
-    "first_name": "",
-    "last_name": "",
-    "email": "org@test.com",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-12-13T08:56:13Z",
-    "role": "ORGANISATION_ADMIN",
-    "phone": "07283638221",
-    "course_department": null,
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "accounts.user",
-  "pk": 4,
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$9aHIDyiDWHOnS7JQ7Az4zS$3SD3FGxhq1X+B+CZy0OXcd24w6LCvdBQDk2YCTbNwcI=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "org2Admin",
-    "first_name": "",
-    "last_name": "",
-    "email": "",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-12-13T09:19:50.256Z",
-    "role": "ORGANISATION_ADMIN",
-    "phone": "07367327827",
-    "course_department": "Health",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "accounts.user",
-  "pk": 13,
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$xjxzzt72sRVkmkqhSyA3Bp$1Ospw+E94ySfaqYC1ysSDy+JVdHCCa7D9xmh81vjric=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "nefoodsupport_admin",
-    "first_name": "Sarah",
-    "last_name": "Mitchell",
-    "email": "contact@nefoodsupport.org",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-12-15T14:37:06.340Z",
-    "role": "ORGANISATION_ADMIN",
-    "phone": "+44 191 234 5678",
-    "course_department": null,
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "accounts.user",
-  "pk": 14,
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$Qly3ujH90jO838HI9IuRTK$4ps0QktCAayhFaLrh/f5a3lI2spmcXx9F50nFicNN8k=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "greensteps_admin",
-    "first_name": "James",
-    "last_name": "Anderson",
-    "email": "info@greensteps.org.uk",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-12-15T14:37:08.154Z",
-    "role": "ORGANISATION_ADMIN",
-    "phone": "+44 191 345 6789",
-    "course_department": null,
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "accounts.user",
-  "pk": 15,
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$RyMqtfbsffXy8TN3kaO6LG$I1AiGvTM/gNMaFFhXL56QpzEgvD/sTICF+I5H1ZrNKA=",
-    "last_login": "2025-12-15T19:32:36.478Z",
-    "is_superuser": false,
-    "username": "codeforward_admin",
-    "first_name": "David",
-    "last_name": "Thompson",
-    "email": "hello@codeforward.org",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-12-15T14:37:09.572Z",
-    "role": "ORGANISATION_ADMIN",
-    "phone": "+44 191 456 7890",
-    "course_department": null,
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "accounts.user",
-  "pk": 16,
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$6rSfaxRtg2gJGXUF2CUtfx$ayhqhvunN2HMLflL+71I+JQpprw39dg6028Y1nkQnqI=",
-    "last_login": "2025-12-17T20:59:11.344Z",
-    "is_superuser": false,
-    "username": "brightmind_admin",
-    "first_name": "Emma",
-    "last_name": "Wilson",
-    "email": "support@brightmind.org.uk",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-12-15T14:37:11.154Z",
-    "role": "ORGANISATION_ADMIN",
-    "phone": "+44 191 567 8901",
-    "course_department": null,
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "accounts.user",
-  "pk": 17,
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$Vc4OWAqMmQHy01hamJ23IZ$QvztffuB00EgdbHd60iGLdhv/JvOT+9HKx/J9e2UtLY=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "heritagehands_admin",
-    "first_name": "Robert",
-    "last_name": "Brown",
-    "email": "info@heritagehands.org",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-12-15T14:37:12.715Z",
-    "role": "ORGANISATION_ADMIN",
-    "phone": "+44 191 678 9012",
-    "course_department": null,
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "accounts.user",
-  "pk": 18,
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$2vnhAHjGoc1fzZwqAfGW37$edtmVwdF3nfKBq7LKkG3M016AlhvrcYjE5vSGPq6pko=",
-    "last_login": "2025-12-15T14:50:40.169Z",
-    "is_superuser": false,
-    "username": "aisha.khan",
-    "first_name": "Aisha",
-    "last_name": "Khan",
-    "email": "aisha.khan@student.ncl.ac.uk",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-12-15T14:37:14.588Z",
-    "role": "VOLUNTEER",
-    "phone": "+44 7700 900123",
-    "course_department": "Computer Science",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "accounts.user",
-  "pk": 19,
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$Geo4sEC9R7eKffbtFr6utj$N4sySld6cXQT/UxUNQCtvyXbNtPBJe4VGjXLsjAOpf8=",
-    "last_login": "2025-12-15T14:54:27.206Z",
-    "is_superuser": false,
-    "username": "tom.reynolds",
-    "first_name": "Tom",
-    "last_name": "Reynolds",
-    "email": "tom.reynolds@student.ncl.ac.uk",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-12-15T14:37:16.750Z",
-    "role": "VOLUNTEER",
-    "phone": "+44 7700 900456",
-    "course_department": "Business & Marketing",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "accounts.user",
-  "pk": 20,
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$w2vwjOypPsdUqdzRJUGXe8$5HS7gimD1cMndxUjfD0J1gM3EZMSgKj45GMuH/wXd4w=",
-    "last_login": "2025-12-15T19:22:06.851Z",
-    "is_superuser": false,
-    "username": "mei.lin",
-    "first_name": "Mei",
-    "last_name": "Lin",
-    "email": "mei.lin@student.ncl.ac.uk",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-12-15T14:37:18.855Z",
-    "role": "VOLUNTEER",
-    "phone": "+44 7700 900789",
-    "course_department": "Biomedical Science",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "organisations.organisation",
-  "pk": 1,
-  "fields": {
-    "name": "Test NGO",
-    "description": "test organisation",
-    "contact_email": "org@test.com",
-    "website": "http://www.orgtest.com",
-    "verified": true,
-    "admin": 3,
-    "created_at": "2025-12-13T09:00:55.182Z",
-    "updated_at": "2025-12-13T09:00:55.182Z"
-  }
-},
-{
-  "model": "organisations.organisation",
-  "pk": 2,
-  "fields": {
-    "name": "Org 2 Health",
-    "description": "Health professionals at your service",
-    "contact_email": "org2Health@test.com",
-    "website": null,
-    "verified": false,
-    "admin": 4,
-    "created_at": "2025-12-13T09:20:29.710Z",
-    "updated_at": "2025-12-13T09:20:29.710Z"
-  }
-},
-{
-  "model": "organisations.organisation",
-  "pk": 8,
-  "fields": {
-    "name": "North East Food Support Network",
-    "description": "A community-focused organisation providing food parcels and support to families in need across the North East region.",
-    "contact_email": "contact@nefoodsupport.org",
-    "website": "https://nefoodsupport.org",
-    "verified": true,
-    "admin": 13,
-    "created_at": "2025-12-15T14:37:08.084Z",
-    "updated_at": "2025-12-15T14:37:08.084Z"
-  }
-},
-{
-  "model": "organisations.organisation",
-  "pk": 9,
-  "fields": {
-    "name": "GreenSteps Environmental Collective",
-    "description": "Environmental organisation focused on local conservation, community gardens, and sustainability education.",
-    "contact_email": "info@greensteps.org.uk",
-    "website": "https://greensteps.org.uk",
-    "verified": true,
-    "admin": 14,
-    "created_at": "2025-12-15T14:37:09.519Z",
-    "updated_at": "2025-12-15T14:37:09.519Z"
-  }
-},
-{
-  "model": "organisations.organisation",
-  "pk": 10,
-  "fields": {
-    "name": "CodeForward Youth Mentoring",
-    "description": "Technology education charity providing coding mentorship and digital skills training to young people.",
-    "contact_email": "hello@codeforward.org",
-    "website": "https://codeforward.org",
-    "verified": true,
-    "admin": 15,
-    "created_at": "2025-12-15T14:37:11.055Z",
-    "updated_at": "2025-12-15T14:37:11.055Z"
-  }
-},
-{
-  "model": "organisations.organisation",
-  "pk": 11,
-  "fields": {
-    "name": "BrightMind Wellbeing Hub",
-    "description": "Community wellbeing centre offering non-clinical mental health support, peer groups, and wellness activities.",
-    "contact_email": "support@brightmind.org.uk",
-    "website": "https://brightmind.org.uk",
-    "verified": true,
-    "admin": 16,
-    "created_at": "2025-12-15T14:37:12.653Z",
-    "updated_at": "2025-12-15T14:37:12.653Z"
-  }
-},
-{
-  "model": "organisations.organisation",
-  "pk": 12,
-  "fields": {
-    "name": "Heritage Hands Community Museum",
-    "description": "Local heritage museum preserving and sharing the history of the North East region through exhibits and community engagement.",
-    "contact_email": "info@heritagehands.org",
-    "website": "https://heritagehands.org",
-    "verified": true,
-    "admin": 17,
-    "created_at": "2025-12-15T14:37:14.518Z",
-    "updated_at": "2025-12-15T14:37:14.518Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 1,
-  "fields": {
-    "title": "Intro to coding",
-    "description": "Great teaching opportunity to teach teenagers coding",
-    "location": "Newcastle",
-    "category": "EDUCATION",
-    "required_skills": "Python, Java, Teaching, Mentor, Coding",
-    "min_hours_per_week": 4,
-    "start_date": "2025-12-13",
-    "end_date": "2026-03-31",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 1,
-    "created_at": "2025-12-13T09:06:02.734Z",
-    "updated_at": "2025-12-13T09:10:15.723Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 2,
-  "fields": {
-    "title": "Opportunity 2",
-    "description": "Test Healthcare opportunity",
-    "location": "Newcastle",
-    "category": "HEALTHCARE",
-    "required_skills": "Care, Understanding, Communication, Empathy",
-    "min_hours_per_week": 5,
-    "start_date": "2025-12-22",
-    "end_date": "2026-02-13",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 1,
-    "created_at": "2025-12-13T09:09:06.554Z",
-    "updated_at": "2025-12-13T09:16:30.214Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 28,
-  "fields": {
-    "title": "Food Parcel Packing Assistant",
-    "description": "Help pack food parcels for distribution to families in need. Requires good organisational skills and ability to work in a team.",
-    "location": "Newcastle upon Tyne",
-    "category": "COMMUNITY",
-    "required_skills": "organisation, teamwork, attention to detail",
-    "min_hours_per_week": 3,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 8,
-    "created_at": "2025-12-15T14:37:08.091Z",
-    "updated_at": "2025-12-15T14:37:08.091Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 29,
-  "fields": {
-    "title": "Community Pantry Greeter",
-    "description": "Welcome visitors to the community pantry, provide information, and create a welcoming atmosphere.",
-    "location": "Newcastle upon Tyne",
-    "category": "COMMUNITY",
-    "required_skills": "communication, empathy, customer service",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 8,
-    "created_at": "2025-12-15T14:37:08.105Z",
-    "updated_at": "2025-12-15T14:37:08.105Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 30,
-  "fields": {
-    "title": "Donation Sorting Volunteer",
-    "description": "Sort and categorise donated items, ensuring quality and proper storage.",
-    "location": "Newcastle upon Tyne",
-    "category": "COMMUNITY",
-    "required_skills": "attention to detail, organisation, physical work",
-    "min_hours_per_week": 3,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 8,
-    "created_at": "2025-12-15T14:37:08.118Z",
-    "updated_at": "2025-12-15T14:37:08.118Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 31,
-  "fields": {
-    "title": "Social Media Updates Helper",
-    "description": "Create and schedule social media posts to raise awareness and engage the community.",
-    "location": "Remote",
-    "category": "COMMUNITY",
-    "required_skills": "social media, writing, content creation",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": true,
-    "status": "OPEN",
-    "organisation": 8,
-    "created_at": "2025-12-15T14:37:08.126Z",
-    "updated_at": "2025-12-15T14:37:08.126Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 32,
-  "fields": {
-    "title": "Delivery Route Helper",
-    "description": "Assist with delivery routes to distribute food parcels (driver not required, helper role).",
-    "location": "Newcastle upon Tyne",
-    "category": "COMMUNITY",
-    "required_skills": "reliability, communication, teamwork",
-    "min_hours_per_week": 4,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 8,
-    "created_at": "2025-12-15T14:37:08.139Z",
-    "updated_at": "2025-12-15T14:37:08.139Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 33,
-  "fields": {
-    "title": "Park Clean-Up Volunteer",
-    "description": "Participate in regular park clean-up sessions, helping maintain local green spaces.",
-    "location": "Newcastle upon Tyne",
-    "category": "ENVIRONMENT",
-    "required_skills": "teamwork, physical work, environmental awareness",
-    "min_hours_per_week": 3,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 9,
-    "created_at": "2025-12-15T14:37:09.525Z",
-    "updated_at": "2025-12-15T14:37:09.525Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 34,
-  "fields": {
-    "title": "Community Garden Supporter",
-    "description": "Support community garden activities including planting, weeding, and maintenance.",
-    "location": "Northumberland",
-    "category": "ENVIRONMENT",
-    "required_skills": "practical work, gardening, teamwork",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 9,
-    "created_at": "2025-12-15T14:37:09.536Z",
-    "updated_at": "2025-12-15T14:37:09.536Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 35,
-  "fields": {
-    "title": "Recycling Awareness Stall Helper",
-    "description": "Help run awareness stalls at local events, educating the public about recycling and sustainability.",
-    "location": "Newcastle upon Tyne",
-    "category": "ENVIRONMENT",
-    "required_skills": "communication, public engagement, environmental knowledge",
-    "min_hours_per_week": 3,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 9,
-    "created_at": "2025-12-15T14:37:09.543Z",
-    "updated_at": "2025-12-15T14:37:09.543Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 36,
-  "fields": {
-    "title": "Eco-Workshop Assistant",
-    "description": "Assist in running workshops on sustainability topics for community members.",
-    "location": "Newcastle upon Tyne",
-    "category": "ENVIRONMENT",
-    "required_skills": "facilitation, communication, environmental education",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 9,
-    "created_at": "2025-12-15T14:37:09.554Z",
-    "updated_at": "2025-12-15T14:37:09.554Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 37,
-  "fields": {
-    "title": "Website Content Editor",
-    "description": "Update website content, write blog posts, and maintain online resources.",
-    "location": "Remote",
-    "category": "ENVIRONMENT",
-    "required_skills": "writing, basic web editing, content creation",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": true,
-    "status": "OPEN",
-    "organisation": 9,
-    "created_at": "2025-12-15T14:37:09.565Z",
-    "updated_at": "2025-12-15T14:37:09.565Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 38,
-  "fields": {
-    "title": "Beginner Coding Mentor",
-    "description": "Mentor young people learning to code, providing guidance and support in Python and JavaScript basics.",
-    "location": "Gateshead",
-    "category": "EDUCATION",
-    "required_skills": "Python, JavaScript, patience, teaching",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 10,
-    "created_at": "2025-12-15T14:37:11.073Z",
-    "updated_at": "2025-12-15T14:37:11.073Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 39,
-  "fields": {
-    "title": "Homework Club Support",
-    "description": "Support students with homework across various subjects in an after-school club setting.",
-    "location": "Newcastle upon Tyne",
-    "category": "EDUCATION",
-    "required_skills": "tutoring, patience, communication",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 10,
-    "created_at": "2025-12-15T14:37:11.094Z",
-    "updated_at": "2025-12-15T14:37:11.094Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 40,
-  "fields": {
-    "title": "STEM Workshop Helper",
-    "description": "Assist in running STEM workshops, helping set up activities and supporting participants.",
-    "location": "Gateshead",
-    "category": "EDUCATION",
-    "required_skills": "teamwork, STEM knowledge, facilitation",
-    "min_hours_per_week": 3,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 10,
-    "created_at": "2025-12-15T14:37:11.115Z",
-    "updated_at": "2025-12-15T14:37:11.115Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 41,
-  "fields": {
-    "title": "Lesson Plan Reviewer",
-    "description": "Review and improve lesson plans and educational materials for coding workshops.",
-    "location": "Remote",
-    "category": "EDUCATION",
-    "required_skills": "writing, attention to detail, educational planning",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": true,
-    "status": "OPEN",
-    "organisation": 10,
-    "created_at": "2025-12-15T14:37:11.131Z",
-    "updated_at": "2025-12-15T14:37:11.131Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 42,
-  "fields": {
-    "title": "Tech Setup Assistant",
-    "description": "Help set up computers and software for workshops, troubleshoot technical issues.",
-    "location": "Newcastle upon Tyne",
-    "category": "TECHNOLOGY",
-    "required_skills": "troubleshooting, technical support, patience",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 10,
-    "created_at": "2025-12-15T14:37:11.139Z",
-    "updated_at": "2025-12-15T19:31:42.470Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 43,
-  "fields": {
-    "title": "Reception & Signposting Volunteer",
-    "description": "Welcome visitors, provide information, and signpost to appropriate services with empathy and care.",
-    "location": "Newcastle upon Tyne",
-    "category": "HEALTHCARE",
-    "required_skills": "empathy, communication, customer service",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 11,
-    "created_at": "2025-12-15T14:37:12.666Z",
-    "updated_at": "2025-12-15T14:37:12.666Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 44,
-  "fields": {
-    "title": "Wellbeing Event Steward",
-    "description": "Help organise and run wellbeing events, ensuring smooth operations and positive experiences.",
-    "location": "Newcastle upon Tyne",
-    "category": "HEALTHCARE",
-    "required_skills": "organisation, communication, event management",
-    "min_hours_per_week": 6,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 11,
-    "created_at": "2025-12-15T14:37:12.674Z",
-    "updated_at": "2025-12-17T20:53:40.740Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 45,
-  "fields": {
-    "title": "Resource Pack Creator",
-    "description": "Create wellbeing resource packs, information sheets, and educational materials.",
-    "location": "Remote",
-    "category": "HEALTHCARE",
-    "required_skills": "writing, design, content creation",
-    "min_hours_per_week": 5,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": true,
-    "status": "OPEN",
-    "organisation": 11,
-    "created_at": "2025-12-15T14:37:12.685Z",
-    "updated_at": "2025-12-17T20:50:44.550Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 46,
-  "fields": {
-    "title": "Peer Support Group Helper",
-    "description": "Support peer support groups, ensuring a safe and welcoming environment (full training provided).",
-    "location": "Newcastle upon Tyne",
-    "category": "HEALTHCARE",
-    "required_skills": "listening, empathy, group facilitation",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 11,
-    "created_at": "2025-12-15T14:37:12.698Z",
-    "updated_at": "2025-12-15T14:37:12.698Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 47,
-  "fields": {
-    "title": "Community Outreach Assistant",
-    "description": "Help with community outreach activities, raising awareness about mental health and wellbeing services.",
-    "location": "Newcastle upon Tyne",
-    "category": "HEALTHCARE",
-    "required_skills": "confidence, communication, public engagement",
-    "min_hours_per_week": 6,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 11,
-    "created_at": "2025-12-15T14:37:12.704Z",
-    "updated_at": "2025-12-17T20:51:20.074Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 48,
-  "fields": {
-    "title": "Front-of-House Visitor Assistant",
-    "description": "Welcome museum visitors, provide information about exhibits, and ensure a positive visitor experience.",
-    "location": "Sunderland",
-    "category": "ARTS",
-    "required_skills": "customer service, communication, public engagement",
-    "min_hours_per_week": 3,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 12,
-    "created_at": "2025-12-15T14:37:14.532Z",
-    "updated_at": "2025-12-15T14:37:14.532Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 49,
-  "fields": {
-    "title": "Archive Digitisation Volunteer",
-    "description": "Help digitise historical archives, ensuring accurate data entry and proper organisation.",
-    "location": "Sunderland",
-    "category": "ARTS",
-    "required_skills": "attention to detail, data entry, organisation",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 12,
-    "created_at": "2025-12-15T14:37:14.543Z",
-    "updated_at": "2025-12-15T14:37:14.543Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 50,
-  "fields": {
-    "title": "Exhibit Guide Volunteer",
-    "description": "Lead guided tours of museum exhibits, sharing knowledge about local history and heritage.",
-    "location": "Sunderland",
-    "category": "ARTS",
-    "required_skills": "public speaking, communication, historical knowledge",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 12,
-    "created_at": "2025-12-15T14:37:14.553Z",
-    "updated_at": "2025-12-15T14:37:14.553Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 51,
-  "fields": {
-    "title": "Events Helper (Weekends)",
-    "description": "Support weekend events and special exhibitions, helping with setup, coordination, and visitor support.",
-    "location": "Sunderland",
-    "category": "ARTS",
-    "required_skills": "teamwork, event management, flexibility",
-    "min_hours_per_week": 4,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": false,
-    "status": "OPEN",
-    "organisation": 12,
-    "created_at": "2025-12-15T14:37:14.566Z",
-    "updated_at": "2025-12-15T14:37:14.566Z"
-  }
-},
-{
-  "model": "opportunities.opportunity",
-  "pk": 52,
-  "fields": {
-    "title": "Newsletter & Blog Writer",
-    "description": "Write newsletter articles and blog posts about museum collections, local history, and upcoming events.",
-    "location": "Remote",
-    "category": "ARTS",
-    "required_skills": "writing, content creation, historical research",
-    "min_hours_per_week": 2,
-    "start_date": "2025-12-22",
-    "end_date": "2026-05-21",
-    "is_remote": true,
-    "status": "OPEN",
-    "organisation": 12,
-    "created_at": "2025-12-15T14:37:14.581Z",
-    "updated_at": "2025-12-15T14:37:14.581Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 1,
-  "fields": {
-    "volunteer": 2,
-    "opportunity": 1,
-    "status": "ACCEPTED",
-    "created_at": "2025-12-13T09:10:27.134Z",
-    "updated_at": "2025-12-13T09:11:31.974Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 2,
-  "fields": {
-    "volunteer": 2,
-    "opportunity": 2,
-    "status": "ACCEPTED",
-    "created_at": "2025-12-13T09:15:37.752Z",
-    "updated_at": "2025-12-13T09:15:44.748Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 3,
-  "fields": {
-    "volunteer": 2,
-    "opportunity": 35,
-    "status": "PENDING",
-    "created_at": "2025-12-15T14:41:08.671Z",
-    "updated_at": "2025-12-15T14:41:08.671Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 4,
-  "fields": {
-    "volunteer": 18,
-    "opportunity": 38,
-    "status": "PENDING",
-    "created_at": "2025-12-15T14:50:54.566Z",
-    "updated_at": "2025-12-15T14:50:54.566Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 5,
-  "fields": {
-    "volunteer": 18,
-    "opportunity": 1,
-    "status": "PENDING",
-    "created_at": "2025-12-15T15:15:13.092Z",
-    "updated_at": "2025-12-15T15:15:13.092Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 6,
-  "fields": {
-    "volunteer": 18,
-    "opportunity": 40,
-    "status": "ACCEPTED",
-    "created_at": "2025-12-15T15:15:35.267Z",
-    "updated_at": "2025-12-15T15:24:47.450Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 7,
-  "fields": {
-    "volunteer": 18,
-    "opportunity": 39,
-    "status": "PENDING",
-    "created_at": "2025-12-15T15:15:43.208Z",
-    "updated_at": "2025-12-15T15:15:43.208Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 8,
-  "fields": {
-    "volunteer": 18,
-    "opportunity": 42,
-    "status": "ACCEPTED",
-    "created_at": "2025-12-15T15:17:16.849Z",
-    "updated_at": "2025-12-15T15:19:26.792Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 9,
-  "fields": {
-    "volunteer": 20,
-    "opportunity": 49,
-    "status": "PENDING",
-    "created_at": "2025-12-15T19:22:38.234Z",
-    "updated_at": "2025-12-15T19:22:38.234Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 10,
-  "fields": {
-    "volunteer": 20,
-    "opportunity": 42,
-    "status": "PENDING",
-    "created_at": "2025-12-15T19:23:03.413Z",
-    "updated_at": "2025-12-15T19:23:03.414Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 11,
-  "fields": {
-    "volunteer": 19,
-    "opportunity": 51,
-    "status": "PENDING",
-    "created_at": "2025-12-17T20:47:54.525Z",
-    "updated_at": "2025-12-17T20:47:54.525Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 12,
-  "fields": {
-    "volunteer": 19,
-    "opportunity": 45,
-    "status": "ACCEPTED",
-    "created_at": "2025-12-17T20:51:44.691Z",
-    "updated_at": "2025-12-17T21:09:20.248Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 13,
-  "fields": {
-    "volunteer": 19,
-    "opportunity": 47,
-    "status": "REJECTED",
-    "created_at": "2025-12-17T20:52:25.108Z",
-    "updated_at": "2025-12-17T20:53:01.071Z"
-  }
-},
-{
-  "model": "opportunities.application",
-  "pk": 14,
-  "fields": {
-    "volunteer": 19,
-    "opportunity": 44,
-    "status": "ACCEPTED",
-    "created_at": "2025-12-17T20:53:53.823Z",
-    "updated_at": "2025-12-17T20:54:08.556Z"
-  }
-},
-{
-  "model": "volunteers.volunteerprofile",
-  "pk": 1,
-  "fields": {
-    "user": 2,
-    "skills": "Python, JavaScript, Teaching, Organisation, teamwork, attention to detail",
-    "availability": {
-      "monday": "",
-      "friday": "",
-      "saturday": ""
-    },
-    "interests": "Education, Technology,  ",
-    "max_hours_per_week": 10,
-    "created_at": "2025-12-13T08:53:34.517Z",
-    "updated_at": "2025-12-15T14:41:38.306Z"
-  }
-},
-{
-  "model": "volunteers.volunteerprofile",
-  "pk": 5,
-  "fields": {
-    "user": 18,
-    "skills": "Python, JavaScript, web development basics, troubleshooting, teamwork, teaching",
-    "availability": {
-      "tuesday": "",
-      "thursday": "",
-      "saturday": ""
-    },
-    "interests": "Education, youth mentoring, digital inclusion, technology",
-    "max_hours_per_week": 6,
-    "created_at": "2025-12-15T14:37:16.744Z",
-    "updated_at": "2025-12-15T20:10:26.220Z"
-  }
-},
-{
-  "model": "volunteers.volunteerprofile",
-  "pk": 6,
-  "fields": {
-    "user": 19,
-    "skills": "social media, copywriting, content creation, event support, communication, marketing",
-    "availability": {
-      "monday": "",
-      "wednesday": "",
-      "sunday": ""
-    },
-    "interests": "Community support, wellbeing, fundraising, mental health",
-    "max_hours_per_week": 10,
-    "created_at": "2025-12-15T14:37:18.845Z",
-    "updated_at": "2025-12-17T20:46:54.756Z"
-  }
-},
-{
-  "model": "volunteers.volunteerprofile",
-  "pk": 7,
-  "fields": {
-    "user": 20,
-    "skills": "organisation, data entry, public engagement, empathy, attention to detail, research",
-    "availability": {
-      "friday": {
-        "start": "14:00",
-        "end": "17:00"
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2025-12-13T08:59:36.530Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "3",
+      "object_repr": "orgadmin (Organisation Admin)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2025-12-13T09:00:55.189Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Test NGO",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2025-12-13T09:06:02.738Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Opportunity 1 - Test NGO",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2025-12-13T09:19:51.646Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "4",
+      "object_repr": "org2Admin (Organisation Admin)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2025-12-13T09:20:29.719Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Org 2 Health",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2025-12-13T09:52:10.045Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "testvolunteer (Volunteer)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "1wdu5aynegoymbwxzgsipsolfc4wwq0m",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSGMPAou3fcbCMwMUjU0Ke3K-O_apAvd3nPOfYmYtrXGrfMSJxIXAUGcfsec8MFtJ3RP7TZLnNu6TFnuijxol-NM_Lwe7t9BTb1-a9YeSsFzATSgLLqQAUgj28FjcFSUJh30ULInk8kmCAzJW0UlgzMs3h8bFzic:1vV9xz:AGM-WJWG4hEQ3af-c01G1gVop7lIcClAQ9_6CTFQSI0",
+      "expire_date": "2025-12-29T14:54:27.212Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "jfu261y4suxavhiduqhsra2n8u6xle5v",
+    "fields": {
+      "session_data": ".eJxVjEsOwiAUAO_C2pBCeXxcuu8ZyAMeUjWQlHZlvLsh6UK3M5N5M4_HXvzRafNrYlcm2OWXBYxPqkOkB9Z747HVfVsDHwk_bedLS_S6ne3foGAvYwsS5oAzoDEGQZGbJ7BaBQsUNUUl02RA6KyCAxe0EVLZjJQdGEEus88XvPs3Lw:1vULRv:wY5vwmqQy5BiHX6REzua_s7YfD05p0akb1vxVd3s3OA",
+      "expire_date": "2025-12-27T08:57:59.227Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "svifjt17twimcgoxoyyc5xg00dmqjeip",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGllr_IWSnjNYu14bB5AtxUmFuDtESgHtm5n3EhHXpcZ15DlOLM5CWXH4HQnTI7eN8B3brcvU2zJPJDdF7nTIa-f8vOzu30HFUb81mIIaksusPRskctYxQoZgELMi5KBNgsJHRSVAKGS1Daj8SSVPjsT7Ayt4ONo:1vVEJA:dgxQKhlCzPjd6OOxeMZZX5S--fhJDTGNLQ6lXxv-l6Y",
+      "expire_date": "2025-12-29T19:32:36.488Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "tymytb6mhapsiwrdn5rdj6xbrbufmc1v",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQRO_iGln-xD9K-pzB2vU6OIAcKU4qxN2JpRTQjEbzZubNIuxbiXvLa5yJXZlml98MIT1z7YAeUO8LT0vd1hl5r_CTNj4ulF-3s_t3UKCVY-2Ed9KCBu0xk82kg5gGk0wSAdAfiiS9DGS8QkWDcFpNshthQwbHPl_ajDdt:1vULQE:NWJa28kacbX9qxVqBv8nWTcDYKY44OHbrPEZuq0V5kE",
+      "expire_date": "2025-12-27T08:56:14.412Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "v8lw0sgkmahrcvlmjguvzj63k7ywn7rh",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSE86gy4dN9vIANDpWogKe3K-O_apAvd3nPOfYlA21rC1vMSZhYXYZQ4_Y6R0iPXnfCd6q3J1Oq6zFHuijxol2Pj_Lwe7t9BoV6-dXLReeUALXoP-eyIJ2MsqoQ0gEfFDuIEGZQ25AE524FAJwNIGqMV7w_lJjcw:1vVE90:H3gss0RPEwVS_QEoVuIP_gNwcH4yD9TQf1tdGASRMaQ",
+      "expire_date": "2025-12-29T19:22:06.863Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "wmxpu5vtvgplq1iphawi3uacg831g6dv",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCEDoJL956BzDBTqRpISrsy3l2bdKHb_977L5VwXUpau8xpYnVWVh1-N8L8kLoBvmO9NZ1bXeaJ9KbonXZ9bSzPy-7-HRTs5VsboaNDMGBQwNkhWnGCLOItDWYMFD2wjDmcJEMmjBiNteTJgQsMqN4f9BU4gw:1vULNe:ojIw_MDaJIGjyxWTqbNHXcFOdM0yu_3wrzVDWK2XJCo",
+      "expire_date": "2025-12-27T08:53:34.492Z"
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$r7eXtSZuGImAlfZTXgBz7h$Prn+X5SJPpsR6EpXlBfBxMXt4gYOD8UcIwYghzdPzFo=",
+      "last_login": "2025-12-13T08:57:59.222Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@volink.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-12-13T08:43:03.088Z",
+      "role": "STAFF_ADMIN",
+      "phone": null,
+      "course_department": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$hqIER7FuffvQxgl1BbYh6d$TFY3qSH3XJMmZOR4eKRfzEla/qS/+pM2I9itfXh5pTI=",
+      "last_login": "2025-12-13T08:53:34Z",
+      "is_superuser": false,
+      "username": "testvolunteer",
+      "first_name": "Volunteer",
+      "last_name": "Wan",
+      "email": "volunteer@test.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-12-13T08:53:33Z",
+      "role": "VOLUNTEER",
+      "phone": "0712345678",
+      "course_department": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$ICctQB8eM4ZlRHTAfjPJ4P$/DafMoUUlUte1kG/awomwljnrGhRRyzrSF+P71/jnKw=",
+      "last_login": "2025-12-13T08:56:14Z",
+      "is_superuser": false,
+      "username": "orgadmin",
+      "first_name": "",
+      "last_name": "",
+      "email": "org@test.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-12-13T08:56:13Z",
+      "role": "ORGANISATION_ADMIN",
+      "phone": "07283638221",
+      "course_department": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$9aHIDyiDWHOnS7JQ7Az4zS$3SD3FGxhq1X+B+CZy0OXcd24w6LCvdBQDk2YCTbNwcI=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "org2Admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-12-13T09:19:50.256Z",
+      "role": "ORGANISATION_ADMIN",
+      "phone": "07367327827",
+      "course_department": "Health",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 13,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$xjxzzt72sRVkmkqhSyA3Bp$1Ospw+E94ySfaqYC1ysSDy+JVdHCCa7D9xmh81vjric=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "nefoodsupport_admin",
+      "first_name": "Sarah",
+      "last_name": "Mitchell",
+      "email": "contact@nefoodsupport.org",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-12-15T14:37:06.340Z",
+      "role": "ORGANISATION_ADMIN",
+      "phone": "+44 191 234 5678",
+      "course_department": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 14,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$Qly3ujH90jO838HI9IuRTK$4ps0QktCAayhFaLrh/f5a3lI2spmcXx9F50nFicNN8k=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "greensteps_admin",
+      "first_name": "James",
+      "last_name": "Anderson",
+      "email": "info@greensteps.org.uk",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-12-15T14:37:08.154Z",
+      "role": "ORGANISATION_ADMIN",
+      "phone": "+44 191 345 6789",
+      "course_department": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 15,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$RyMqtfbsffXy8TN3kaO6LG$I1AiGvTM/gNMaFFhXL56QpzEgvD/sTICF+I5H1ZrNKA=",
+      "last_login": "2025-12-15T19:32:36.478Z",
+      "is_superuser": false,
+      "username": "codeforward_admin",
+      "first_name": "David",
+      "last_name": "Thompson",
+      "email": "hello@codeforward.org",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-12-15T14:37:09.572Z",
+      "role": "ORGANISATION_ADMIN",
+      "phone": "+44 191 456 7890",
+      "course_department": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 16,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$6rSfaxRtg2gJGXUF2CUtfx$ayhqhvunN2HMLflL+71I+JQpprw39dg6028Y1nkQnqI=",
+      "last_login": "2025-12-17T20:59:11.344Z",
+      "is_superuser": false,
+      "username": "brightmind_admin",
+      "first_name": "Emma",
+      "last_name": "Wilson",
+      "email": "support@brightmind.org.uk",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-12-15T14:37:11.154Z",
+      "role": "ORGANISATION_ADMIN",
+      "phone": "+44 191 567 8901",
+      "course_department": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 17,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$Vc4OWAqMmQHy01hamJ23IZ$QvztffuB00EgdbHd60iGLdhv/JvOT+9HKx/J9e2UtLY=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "heritagehands_admin",
+      "first_name": "Robert",
+      "last_name": "Brown",
+      "email": "info@heritagehands.org",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-12-15T14:37:12.715Z",
+      "role": "ORGANISATION_ADMIN",
+      "phone": "+44 191 678 9012",
+      "course_department": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 18,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$2vnhAHjGoc1fzZwqAfGW37$edtmVwdF3nfKBq7LKkG3M016AlhvrcYjE5vSGPq6pko=",
+      "last_login": "2025-12-15T14:50:40.169Z",
+      "is_superuser": false,
+      "username": "aisha.khan",
+      "first_name": "Aisha",
+      "last_name": "Khan",
+      "email": "aisha.khan@student.ncl.ac.uk",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-12-15T14:37:14.588Z",
+      "role": "VOLUNTEER",
+      "phone": "+44 7700 900123",
+      "course_department": "Computer Science",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 19,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$Geo4sEC9R7eKffbtFr6utj$N4sySld6cXQT/UxUNQCtvyXbNtPBJe4VGjXLsjAOpf8=",
+      "last_login": "2025-12-15T14:54:27.206Z",
+      "is_superuser": false,
+      "username": "tom.reynolds",
+      "first_name": "Tom",
+      "last_name": "Reynolds",
+      "email": "tom.reynolds@student.ncl.ac.uk",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-12-15T14:37:16.750Z",
+      "role": "VOLUNTEER",
+      "phone": "+44 7700 900456",
+      "course_department": "Business & Marketing",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 20,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$w2vwjOypPsdUqdzRJUGXe8$5HS7gimD1cMndxUjfD0J1gM3EZMSgKj45GMuH/wXd4w=",
+      "last_login": "2025-12-15T19:22:06.851Z",
+      "is_superuser": false,
+      "username": "mei.lin",
+      "first_name": "Mei",
+      "last_name": "Lin",
+      "email": "mei.lin@student.ncl.ac.uk",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-12-15T14:37:18.855Z",
+      "role": "VOLUNTEER",
+      "phone": "+44 7700 900789",
+      "course_department": "Biomedical Science",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "organisations.organisation",
+    "pk": 1,
+    "fields": {
+      "name": "Test NGO",
+      "description": "test organisation",
+      "contact_email": "org@test.com",
+      "website": "http://www.orgtest.com",
+      "verified": true,
+      "admin": 3,
+      "created_at": "2025-12-13T09:00:55.182Z",
+      "updated_at": "2025-12-13T09:00:55.182Z"
+    }
+  },
+  {
+    "model": "organisations.organisation",
+    "pk": 2,
+    "fields": {
+      "name": "Org 2 Health",
+      "description": "Health professionals at your service",
+      "contact_email": "org2Health@test.com",
+      "website": null,
+      "verified": false,
+      "admin": 4,
+      "created_at": "2025-12-13T09:20:29.710Z",
+      "updated_at": "2025-12-13T09:20:29.710Z"
+    }
+  },
+  {
+    "model": "organisations.organisation",
+    "pk": 8,
+    "fields": {
+      "name": "North East Food Support Network",
+      "description": "A community-focused organisation providing food parcels and support to families in need across the North East region.",
+      "contact_email": "contact@nefoodsupport.org",
+      "website": "https://nefoodsupport.org",
+      "verified": true,
+      "admin": 13,
+      "created_at": "2025-12-15T14:37:08.084Z",
+      "updated_at": "2025-12-15T14:37:08.084Z"
+    }
+  },
+  {
+    "model": "organisations.organisation",
+    "pk": 9,
+    "fields": {
+      "name": "GreenSteps Environmental Collective",
+      "description": "Environmental organisation focused on local conservation, community gardens, and sustainability education.",
+      "contact_email": "info@greensteps.org.uk",
+      "website": "https://greensteps.org.uk",
+      "verified": true,
+      "admin": 14,
+      "created_at": "2025-12-15T14:37:09.519Z",
+      "updated_at": "2025-12-15T14:37:09.519Z"
+    }
+  },
+  {
+    "model": "organisations.organisation",
+    "pk": 10,
+    "fields": {
+      "name": "CodeForward Youth Mentoring",
+      "description": "Technology education charity providing coding mentorship and digital skills training to young people.",
+      "contact_email": "hello@codeforward.org",
+      "website": "https://codeforward.org",
+      "verified": true,
+      "admin": 15,
+      "created_at": "2025-12-15T14:37:11.055Z",
+      "updated_at": "2025-12-15T14:37:11.055Z"
+    }
+  },
+  {
+    "model": "organisations.organisation",
+    "pk": 11,
+    "fields": {
+      "name": "BrightMind Wellbeing Hub",
+      "description": "Community wellbeing centre offering non-clinical mental health support, peer groups, and wellness activities.",
+      "contact_email": "support@brightmind.org.uk",
+      "website": "https://brightmind.org.uk",
+      "verified": true,
+      "admin": 16,
+      "created_at": "2025-12-15T14:37:12.653Z",
+      "updated_at": "2025-12-15T14:37:12.653Z"
+    }
+  },
+  {
+    "model": "organisations.organisation",
+    "pk": 12,
+    "fields": {
+      "name": "Heritage Hands Community Museum",
+      "description": "Local heritage museum preserving and sharing the history of the North East region through exhibits and community engagement.",
+      "contact_email": "info@heritagehands.org",
+      "website": "https://heritagehands.org",
+      "verified": true,
+      "admin": 17,
+      "created_at": "2025-12-15T14:37:14.518Z",
+      "updated_at": "2025-12-15T14:37:14.518Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 1,
+    "fields": {
+      "title": "Intro to coding",
+      "description": "Great teaching opportunity to teach teenagers coding",
+      "location": "Newcastle",
+      "category": "EDUCATION",
+      "required_skills": "Python, Java, Teaching, Mentor, Coding",
+      "min_hours_per_week": 4,
+      "start_date": "2025-12-13",
+      "end_date": "2026-03-31",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 1,
+      "created_at": "2025-12-13T09:06:02.734Z",
+      "updated_at": "2025-12-13T09:10:15.723Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 2,
+    "fields": {
+      "title": "Opportunity 2",
+      "description": "Test Healthcare opportunity",
+      "location": "Newcastle",
+      "category": "HEALTHCARE",
+      "required_skills": "Care, Understanding, Communication, Empathy",
+      "min_hours_per_week": 5,
+      "start_date": "2025-12-22",
+      "end_date": "2026-02-13",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 1,
+      "created_at": "2025-12-13T09:09:06.554Z",
+      "updated_at": "2025-12-13T09:16:30.214Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 28,
+    "fields": {
+      "title": "Food Parcel Packing Assistant",
+      "description": "Help pack food parcels for distribution to families in need. Requires good organisational skills and ability to work in a team.",
+      "location": "Newcastle upon Tyne",
+      "category": "COMMUNITY",
+      "required_skills": "organisation, teamwork, attention to detail",
+      "min_hours_per_week": 3,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 8,
+      "created_at": "2025-12-15T14:37:08.091Z",
+      "updated_at": "2025-12-15T14:37:08.091Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 29,
+    "fields": {
+      "title": "Community Pantry Greeter",
+      "description": "Welcome visitors to the community pantry, provide information, and create a welcoming atmosphere.",
+      "location": "Newcastle upon Tyne",
+      "category": "COMMUNITY",
+      "required_skills": "communication, empathy, customer service",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 8,
+      "created_at": "2025-12-15T14:37:08.105Z",
+      "updated_at": "2025-12-15T14:37:08.105Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 30,
+    "fields": {
+      "title": "Donation Sorting Volunteer",
+      "description": "Sort and categorise donated items, ensuring quality and proper storage.",
+      "location": "Newcastle upon Tyne",
+      "category": "COMMUNITY",
+      "required_skills": "attention to detail, organisation, physical work",
+      "min_hours_per_week": 3,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 8,
+      "created_at": "2025-12-15T14:37:08.118Z",
+      "updated_at": "2025-12-15T14:37:08.118Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 31,
+    "fields": {
+      "title": "Social Media Updates Helper",
+      "description": "Create and schedule social media posts to raise awareness and engage the community.",
+      "location": "Remote",
+      "category": "COMMUNITY",
+      "required_skills": "social media, writing, content creation",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": true,
+      "status": "OPEN",
+      "organisation": 8,
+      "created_at": "2025-12-15T14:37:08.126Z",
+      "updated_at": "2025-12-15T14:37:08.126Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 32,
+    "fields": {
+      "title": "Delivery Route Helper",
+      "description": "Assist with delivery routes to distribute food parcels (driver not required, helper role).",
+      "location": "Newcastle upon Tyne",
+      "category": "COMMUNITY",
+      "required_skills": "reliability, communication, teamwork",
+      "min_hours_per_week": 4,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 8,
+      "created_at": "2025-12-15T14:37:08.139Z",
+      "updated_at": "2025-12-15T14:37:08.139Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 33,
+    "fields": {
+      "title": "Park Clean-Up Volunteer",
+      "description": "Participate in regular park clean-up sessions, helping maintain local green spaces.",
+      "location": "Newcastle upon Tyne",
+      "category": "ENVIRONMENT",
+      "required_skills": "teamwork, physical work, environmental awareness",
+      "min_hours_per_week": 3,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 9,
+      "created_at": "2025-12-15T14:37:09.525Z",
+      "updated_at": "2025-12-15T14:37:09.525Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 34,
+    "fields": {
+      "title": "Community Garden Supporter",
+      "description": "Support community garden activities including planting, weeding, and maintenance.",
+      "location": "Northumberland",
+      "category": "ENVIRONMENT",
+      "required_skills": "practical work, gardening, teamwork",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 9,
+      "created_at": "2025-12-15T14:37:09.536Z",
+      "updated_at": "2025-12-15T14:37:09.536Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 35,
+    "fields": {
+      "title": "Recycling Awareness Stall Helper",
+      "description": "Help run awareness stalls at local events, educating the public about recycling and sustainability.",
+      "location": "Newcastle upon Tyne",
+      "category": "ENVIRONMENT",
+      "required_skills": "communication, public engagement, environmental knowledge",
+      "min_hours_per_week": 3,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 9,
+      "created_at": "2025-12-15T14:37:09.543Z",
+      "updated_at": "2025-12-15T14:37:09.543Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 36,
+    "fields": {
+      "title": "Eco-Workshop Assistant",
+      "description": "Assist in running workshops on sustainability topics for community members.",
+      "location": "Newcastle upon Tyne",
+      "category": "ENVIRONMENT",
+      "required_skills": "facilitation, communication, environmental education",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 9,
+      "created_at": "2025-12-15T14:37:09.554Z",
+      "updated_at": "2025-12-15T14:37:09.554Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 37,
+    "fields": {
+      "title": "Website Content Editor",
+      "description": "Update website content, write blog posts, and maintain online resources.",
+      "location": "Remote",
+      "category": "ENVIRONMENT",
+      "required_skills": "writing, basic web editing, content creation",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": true,
+      "status": "OPEN",
+      "organisation": 9,
+      "created_at": "2025-12-15T14:37:09.565Z",
+      "updated_at": "2025-12-15T14:37:09.565Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 38,
+    "fields": {
+      "title": "Beginner Coding Mentor",
+      "description": "Mentor young people learning to code, providing guidance and support in Python and JavaScript basics.",
+      "location": "Gateshead",
+      "category": "EDUCATION",
+      "required_skills": "Python, JavaScript, patience, teaching",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 10,
+      "created_at": "2025-12-15T14:37:11.073Z",
+      "updated_at": "2025-12-15T14:37:11.073Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 39,
+    "fields": {
+      "title": "Homework Club Support",
+      "description": "Support students with homework across various subjects in an after-school club setting.",
+      "location": "Newcastle upon Tyne",
+      "category": "EDUCATION",
+      "required_skills": "tutoring, patience, communication",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 10,
+      "created_at": "2025-12-15T14:37:11.094Z",
+      "updated_at": "2025-12-15T14:37:11.094Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 40,
+    "fields": {
+      "title": "STEM Workshop Helper",
+      "description": "Assist in running STEM workshops, helping set up activities and supporting participants.",
+      "location": "Gateshead",
+      "category": "EDUCATION",
+      "required_skills": "teamwork, STEM knowledge, facilitation",
+      "min_hours_per_week": 3,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 10,
+      "created_at": "2025-12-15T14:37:11.115Z",
+      "updated_at": "2025-12-15T14:37:11.115Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 41,
+    "fields": {
+      "title": "Lesson Plan Reviewer",
+      "description": "Review and improve lesson plans and educational materials for coding workshops.",
+      "location": "Remote",
+      "category": "EDUCATION",
+      "required_skills": "writing, attention to detail, educational planning",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": true,
+      "status": "OPEN",
+      "organisation": 10,
+      "created_at": "2025-12-15T14:37:11.131Z",
+      "updated_at": "2025-12-15T14:37:11.131Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 42,
+    "fields": {
+      "title": "Tech Setup Assistant",
+      "description": "Help set up computers and software for workshops, troubleshoot technical issues.",
+      "location": "Newcastle upon Tyne",
+      "category": "TECHNOLOGY",
+      "required_skills": "troubleshooting, technical support, patience",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 10,
+      "created_at": "2025-12-15T14:37:11.139Z",
+      "updated_at": "2025-12-15T19:31:42.470Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 43,
+    "fields": {
+      "title": "Reception & Signposting Volunteer",
+      "description": "Welcome visitors, provide information, and signpost to appropriate services with empathy and care.",
+      "location": "Newcastle upon Tyne",
+      "category": "HEALTHCARE",
+      "required_skills": "empathy, communication, customer service",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 11,
+      "created_at": "2025-12-15T14:37:12.666Z",
+      "updated_at": "2025-12-15T14:37:12.666Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 44,
+    "fields": {
+      "title": "Wellbeing Event Steward",
+      "description": "Help organise and run wellbeing events, ensuring smooth operations and positive experiences.",
+      "location": "Newcastle upon Tyne",
+      "category": "HEALTHCARE",
+      "required_skills": "organisation, communication, event management",
+      "min_hours_per_week": 6,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 11,
+      "created_at": "2025-12-15T14:37:12.674Z",
+      "updated_at": "2025-12-17T20:53:40.740Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 45,
+    "fields": {
+      "title": "Resource Pack Creator",
+      "description": "Create wellbeing resource packs, information sheets, and educational materials.",
+      "location": "Remote",
+      "category": "HEALTHCARE",
+      "required_skills": "writing, design, content creation",
+      "min_hours_per_week": 5,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": true,
+      "status": "OPEN",
+      "organisation": 11,
+      "created_at": "2025-12-15T14:37:12.685Z",
+      "updated_at": "2025-12-17T20:50:44.550Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 46,
+    "fields": {
+      "title": "Peer Support Group Helper",
+      "description": "Support peer support groups, ensuring a safe and welcoming environment (full training provided).",
+      "location": "Newcastle upon Tyne",
+      "category": "HEALTHCARE",
+      "required_skills": "listening, empathy, group facilitation",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 11,
+      "created_at": "2025-12-15T14:37:12.698Z",
+      "updated_at": "2025-12-15T14:37:12.698Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 47,
+    "fields": {
+      "title": "Community Outreach Assistant",
+      "description": "Help with community outreach activities, raising awareness about mental health and wellbeing services.",
+      "location": "Newcastle upon Tyne",
+      "category": "HEALTHCARE",
+      "required_skills": "confidence, communication, public engagement",
+      "min_hours_per_week": 6,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 11,
+      "created_at": "2025-12-15T14:37:12.704Z",
+      "updated_at": "2025-12-17T20:51:20.074Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 48,
+    "fields": {
+      "title": "Front-of-House Visitor Assistant",
+      "description": "Welcome museum visitors, provide information about exhibits, and ensure a positive visitor experience.",
+      "location": "Sunderland",
+      "category": "ARTS",
+      "required_skills": "customer service, communication, public engagement",
+      "min_hours_per_week": 3,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 12,
+      "created_at": "2025-12-15T14:37:14.532Z",
+      "updated_at": "2025-12-15T14:37:14.532Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 49,
+    "fields": {
+      "title": "Archive Digitisation Volunteer",
+      "description": "Help digitise historical archives, ensuring accurate data entry and proper organisation.",
+      "location": "Sunderland",
+      "category": "ARTS",
+      "required_skills": "attention to detail, data entry, organisation",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 12,
+      "created_at": "2025-12-15T14:37:14.543Z",
+      "updated_at": "2025-12-15T14:37:14.543Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 50,
+    "fields": {
+      "title": "Exhibit Guide Volunteer",
+      "description": "Lead guided tours of museum exhibits, sharing knowledge about local history and heritage.",
+      "location": "Sunderland",
+      "category": "ARTS",
+      "required_skills": "public speaking, communication, historical knowledge",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 12,
+      "created_at": "2025-12-15T14:37:14.553Z",
+      "updated_at": "2025-12-15T14:37:14.553Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 51,
+    "fields": {
+      "title": "Events Helper (Weekends)",
+      "description": "Support weekend events and special exhibitions, helping with setup, coordination, and visitor support.",
+      "location": "Sunderland",
+      "category": "ARTS",
+      "required_skills": "teamwork, event management, flexibility",
+      "min_hours_per_week": 4,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": false,
+      "status": "OPEN",
+      "organisation": 12,
+      "created_at": "2025-12-15T14:37:14.566Z",
+      "updated_at": "2025-12-15T14:37:14.566Z"
+    }
+  },
+  {
+    "model": "opportunities.opportunity",
+    "pk": 52,
+    "fields": {
+      "title": "Newsletter & Blog Writer",
+      "description": "Write newsletter articles and blog posts about museum collections, local history, and upcoming events.",
+      "location": "Remote",
+      "category": "ARTS",
+      "required_skills": "writing, content creation, historical research",
+      "min_hours_per_week": 2,
+      "start_date": "2025-12-22",
+      "end_date": "2026-05-21",
+      "is_remote": true,
+      "status": "OPEN",
+      "organisation": 12,
+      "created_at": "2025-12-15T14:37:14.581Z",
+      "updated_at": "2025-12-15T14:37:14.581Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 1,
+    "fields": {
+      "volunteer": 2,
+      "opportunity": 1,
+      "status": "ACCEPTED",
+      "created_at": "2025-12-13T09:10:27.134Z",
+      "updated_at": "2025-12-13T09:11:31.974Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 2,
+    "fields": {
+      "volunteer": 2,
+      "opportunity": 2,
+      "status": "ACCEPTED",
+      "created_at": "2025-12-13T09:15:37.752Z",
+      "updated_at": "2025-12-13T09:15:44.748Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 3,
+    "fields": {
+      "volunteer": 2,
+      "opportunity": 35,
+      "status": "PENDING",
+      "created_at": "2025-12-15T14:41:08.671Z",
+      "updated_at": "2025-12-15T14:41:08.671Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 4,
+    "fields": {
+      "volunteer": 18,
+      "opportunity": 38,
+      "status": "PENDING",
+      "created_at": "2025-12-15T14:50:54.566Z",
+      "updated_at": "2025-12-15T14:50:54.566Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 5,
+    "fields": {
+      "volunteer": 18,
+      "opportunity": 1,
+      "status": "PENDING",
+      "created_at": "2025-12-15T15:15:13.092Z",
+      "updated_at": "2025-12-15T15:15:13.092Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 6,
+    "fields": {
+      "volunteer": 18,
+      "opportunity": 40,
+      "status": "ACCEPTED",
+      "created_at": "2025-12-15T15:15:35.267Z",
+      "updated_at": "2025-12-15T15:24:47.450Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 7,
+    "fields": {
+      "volunteer": 18,
+      "opportunity": 39,
+      "status": "PENDING",
+      "created_at": "2025-12-15T15:15:43.208Z",
+      "updated_at": "2025-12-15T15:15:43.208Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 8,
+    "fields": {
+      "volunteer": 18,
+      "opportunity": 42,
+      "status": "ACCEPTED",
+      "created_at": "2025-12-15T15:17:16.849Z",
+      "updated_at": "2025-12-15T15:19:26.792Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 9,
+    "fields": {
+      "volunteer": 20,
+      "opportunity": 49,
+      "status": "PENDING",
+      "created_at": "2025-12-15T19:22:38.234Z",
+      "updated_at": "2025-12-15T19:22:38.234Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 10,
+    "fields": {
+      "volunteer": 20,
+      "opportunity": 42,
+      "status": "PENDING",
+      "created_at": "2025-12-15T19:23:03.413Z",
+      "updated_at": "2025-12-15T19:23:03.414Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 11,
+    "fields": {
+      "volunteer": 19,
+      "opportunity": 51,
+      "status": "PENDING",
+      "created_at": "2025-12-17T20:47:54.525Z",
+      "updated_at": "2025-12-17T20:47:54.525Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 12,
+    "fields": {
+      "volunteer": 19,
+      "opportunity": 45,
+      "status": "ACCEPTED",
+      "created_at": "2025-12-17T20:51:44.691Z",
+      "updated_at": "2025-12-17T21:09:20.248Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 13,
+    "fields": {
+      "volunteer": 19,
+      "opportunity": 47,
+      "status": "REJECTED",
+      "created_at": "2025-12-17T20:52:25.108Z",
+      "updated_at": "2025-12-17T20:53:01.071Z"
+    }
+  },
+  {
+    "model": "opportunities.application",
+    "pk": 14,
+    "fields": {
+      "volunteer": 19,
+      "opportunity": 44,
+      "status": "ACCEPTED",
+      "created_at": "2025-12-17T20:53:53.823Z",
+      "updated_at": "2025-12-17T20:54:08.556Z"
+    }
+  },
+  {
+    "model": "volunteers.volunteerprofile",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "skills": "Python, JavaScript, Teaching, Organisation, teamwork, attention to detail",
+      "availability": {
+        "monday": "",
+        "friday": "",
+        "saturday": ""
       },
-      "saturday": {
-        "start": "09:00",
-        "end": "12:00"
-      }
-    },
-    "interests": "Health, mental wellbeing, community outreach, healthcare",
-    "max_hours_per_week": 4,
-    "created_at": "2025-12-15T14:37:20.277Z",
-    "updated_at": "2025-12-15T14:37:20.277Z"
+      "interests": "Education, Technology,  ",
+      "max_hours_per_week": 10,
+      "created_at": "2025-12-13T08:53:34.517Z",
+      "updated_at": "2025-12-15T14:41:38.306Z"
+    }
+  },
+  {
+    "model": "volunteers.volunteerprofile",
+    "pk": 5,
+    "fields": {
+      "user": 18,
+      "skills": "Python, JavaScript, web development basics, troubleshooting, teamwork, teaching",
+      "availability": {
+        "tuesday": "",
+        "thursday": "",
+        "saturday": ""
+      },
+      "interests": "Education, youth mentoring, digital inclusion, technology",
+      "max_hours_per_week": 6,
+      "created_at": "2025-12-15T14:37:16.744Z",
+      "updated_at": "2025-12-15T20:10:26.220Z"
+    }
+  },
+  {
+    "model": "volunteers.volunteerprofile",
+    "pk": 6,
+    "fields": {
+      "user": 19,
+      "skills": "social media, copywriting, content creation, event support, communication, marketing",
+      "availability": {
+        "monday": "",
+        "wednesday": "",
+        "sunday": ""
+      },
+      "interests": "Community support, wellbeing, fundraising, mental health",
+      "max_hours_per_week": 10,
+      "created_at": "2025-12-15T14:37:18.845Z",
+      "updated_at": "2025-12-17T20:46:54.756Z"
+    }
+  },
+  {
+    "model": "volunteers.volunteerprofile",
+    "pk": 7,
+    "fields": {
+      "user": 20,
+      "skills": "organisation, data entry, public engagement, empathy, attention to detail, research",
+      "availability": {
+        "friday": {
+          "start": "14:00",
+          "end": "17:00"
+        },
+        "saturday": {
+          "start": "09:00",
+          "end": "12:00"
+        }
+      },
+      "interests": "Health, mental wellbeing, community outreach, healthcare",
+      "max_hours_per_week": 4,
+      "created_at": "2025-12-15T14:37:20.277Z",
+      "updated_at": "2025-12-15T14:37:20.277Z"
+    }
+  },
+  {
+    "model": "volunteers.participationrecord",
+    "pk": 1,
+    "fields": {
+      "volunteer": 2,
+      "opportunity": 1,
+      "hours_logged": "1.00",
+      "date": "2025-12-14",
+      "notes": "Introduction of module to kids, and course timeline",
+      "created_at": "2025-12-13T09:14:17.303Z"
+    }
+  },
+  {
+    "model": "volunteers.participationrecord",
+    "pk": 2,
+    "fields": {
+      "volunteer": 2,
+      "opportunity": 1,
+      "hours_logged": "1.50",
+      "date": "2025-12-19",
+      "notes": "What is coding?",
+      "created_at": "2025-12-13T09:15:00.173Z"
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 1,
+    "fields": {
+      "user": 3,
+      "message": "New application from testvolunteer for \"Intro to coding\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-13T09:10:27.141Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "message": "Your application for \"Intro to coding\" has been accepted.",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-13T09:11:31.980Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "message": "New application from testvolunteer for \"Opportunity 2\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-13T09:15:37.759Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 4,
+    "fields": {
+      "user": 2,
+      "message": "Your application for \"Opportunity 2\" has been accepted.",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-13T09:15:44.755Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 5,
+    "fields": {
+      "user": 14,
+      "message": "New application from testvolunteer for \"Recycling Awareness Stall Helper\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-15T14:41:08.680Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 6,
+    "fields": {
+      "user": 15,
+      "message": "New application from aisha.khan for \"Beginner Coding Mentor\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-15T14:50:54.573Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 7,
+    "fields": {
+      "user": 3,
+      "message": "New application from aisha.khan for \"Intro to coding\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-15T15:15:13.102Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 8,
+    "fields": {
+      "user": 15,
+      "message": "New application from aisha.khan for \"STEM Workshop Helper\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-15T15:15:35.279Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 9,
+    "fields": {
+      "user": 15,
+      "message": "New application from aisha.khan for \"Homework Club Support\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-15T15:15:43.215Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 10,
+    "fields": {
+      "user": 15,
+      "message": "New application from aisha.khan for \"Tech Setup Assistant\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-15T15:17:16.860Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 11,
+    "fields": {
+      "user": 18,
+      "message": "Your application for \"Tech Setup Assistant\" has been accepted.",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-15T15:19:26.802Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 12,
+    "fields": {
+      "user": 18,
+      "message": "Your application for \"STEM Workshop Helper\" has been accepted.",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-15T15:24:47.505Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 13,
+    "fields": {
+      "user": 17,
+      "message": "New application from mei.lin for \"Archive Digitisation Volunteer\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-15T19:22:38.258Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 14,
+    "fields": {
+      "user": 15,
+      "message": "New application from mei.lin for \"Tech Setup Assistant\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-15T19:23:03.431Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 15,
+    "fields": {
+      "user": 17,
+      "message": "New application from tom.reynolds for \"Events Helper (Weekends)\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-17T20:47:54.549Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 16,
+    "fields": {
+      "user": 16,
+      "message": "New application from tom.reynolds for \"Resource Pack Creator\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-17T20:51:44.706Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 17,
+    "fields": {
+      "user": 16,
+      "message": "New application from tom.reynolds for \"Community Outreach Assistant\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-17T20:52:25.122Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 18,
+    "fields": {
+      "user": 19,
+      "message": "Your application for \"Community Outreach Assistant\" has been rejected.",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-17T20:53:01.078Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 19,
+    "fields": {
+      "user": 16,
+      "message": "New application from tom.reynolds for \"Wellbeing Event Steward\"",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-17T20:53:53.840Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 20,
+    "fields": {
+      "user": 19,
+      "message": "Your application for \"Wellbeing Event Steward\" has been accepted.",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-17T20:54:08.565Z",
+      "read_at": null
+    }
+  },
+  {
+    "model": "notifications.notification",
+    "pk": 21,
+    "fields": {
+      "user": 19,
+      "message": "Your application for \"Resource Pack Creator\" has been accepted.",
+      "type": "OPPORTUNITY_UPDATE",
+      "created_at": "2025-12-17T21:09:20.257Z",
+      "read_at": null
+    }
   }
-},
-{
-  "model": "volunteers.participationrecord",
-  "pk": 1,
-  "fields": {
-    "volunteer": 2,
-    "opportunity": 1,
-    "hours_logged": "1.00",
-    "date": "2025-12-14",
-    "notes": "Introduction of module to kids, and course timeline",
-    "created_at": "2025-12-13T09:14:17.303Z"
-  }
-},
-{
-  "model": "volunteers.participationrecord",
-  "pk": 2,
-  "fields": {
-    "volunteer": 2,
-    "opportunity": 1,
-    "hours_logged": "1.50",
-    "date": "2025-12-19",
-    "notes": "What is coding?",
-    "created_at": "2025-12-13T09:15:00.173Z"
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 1,
-  "fields": {
-    "user": 3,
-    "message": "New application from testvolunteer for \"Intro to coding\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-13T09:10:27.141Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 2,
-  "fields": {
-    "user": 2,
-    "message": "Your application for \"Intro to coding\" has been accepted.",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-13T09:11:31.980Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 3,
-  "fields": {
-    "user": 3,
-    "message": "New application from testvolunteer for \"Opportunity 2\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-13T09:15:37.759Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 4,
-  "fields": {
-    "user": 2,
-    "message": "Your application for \"Opportunity 2\" has been accepted.",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-13T09:15:44.755Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 5,
-  "fields": {
-    "user": 14,
-    "message": "New application from testvolunteer for \"Recycling Awareness Stall Helper\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-15T14:41:08.680Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 6,
-  "fields": {
-    "user": 15,
-    "message": "New application from aisha.khan for \"Beginner Coding Mentor\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-15T14:50:54.573Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 7,
-  "fields": {
-    "user": 3,
-    "message": "New application from aisha.khan for \"Intro to coding\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-15T15:15:13.102Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 8,
-  "fields": {
-    "user": 15,
-    "message": "New application from aisha.khan for \"STEM Workshop Helper\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-15T15:15:35.279Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 9,
-  "fields": {
-    "user": 15,
-    "message": "New application from aisha.khan for \"Homework Club Support\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-15T15:15:43.215Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 10,
-  "fields": {
-    "user": 15,
-    "message": "New application from aisha.khan for \"Tech Setup Assistant\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-15T15:17:16.860Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 11,
-  "fields": {
-    "user": 18,
-    "message": "Your application for \"Tech Setup Assistant\" has been accepted.",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-15T15:19:26.802Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 12,
-  "fields": {
-    "user": 18,
-    "message": "Your application for \"STEM Workshop Helper\" has been accepted.",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-15T15:24:47.505Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 13,
-  "fields": {
-    "user": 17,
-    "message": "New application from mei.lin for \"Archive Digitisation Volunteer\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-15T19:22:38.258Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 14,
-  "fields": {
-    "user": 15,
-    "message": "New application from mei.lin for \"Tech Setup Assistant\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-15T19:23:03.431Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 15,
-  "fields": {
-    "user": 17,
-    "message": "New application from tom.reynolds for \"Events Helper (Weekends)\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-17T20:47:54.549Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 16,
-  "fields": {
-    "user": 16,
-    "message": "New application from tom.reynolds for \"Resource Pack Creator\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-17T20:51:44.706Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 17,
-  "fields": {
-    "user": 16,
-    "message": "New application from tom.reynolds for \"Community Outreach Assistant\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-17T20:52:25.122Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 18,
-  "fields": {
-    "user": 19,
-    "message": "Your application for \"Community Outreach Assistant\" has been rejected.",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-17T20:53:01.078Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 19,
-  "fields": {
-    "user": 16,
-    "message": "New application from tom.reynolds for \"Wellbeing Event Steward\"",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-17T20:53:53.840Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 20,
-  "fields": {
-    "user": 19,
-    "message": "Your application for \"Wellbeing Event Steward\" has been accepted.",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-17T20:54:08.565Z",
-    "read_at": null
-  }
-},
-{
-  "model": "notifications.notification",
-  "pk": 21,
-  "fields": {
-    "user": 19,
-    "message": "Your application for \"Resource Pack Creator\" has been accepted.",
-    "type": "OPPORTUNITY_UPDATE",
-    "created_at": "2025-12-17T21:09:20.257Z",
-    "read_at": null
-  }
-}
 ]
