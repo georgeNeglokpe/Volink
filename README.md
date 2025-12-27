@@ -93,16 +93,6 @@ Volink/
 └── volink/           # Django project settings
 ```
 
-## Documentation
-
-See the `docs/` folder for detailed documentation:
-- `epic.md` - Project epic and overview
-- `user_stories.md` - User stories
-- `story_mapping.md` - User journey mapping
-- `features_plan.md` - Feature breakdown and story splitting
-- `qa_plan.md` - Quality assurance plan
-- `competitor_analysis.md` - Competitor analysis and USP
-- `implemented_vs_simulated.md` - Feature implementation status
 
 ## Wizard of Oz Features
 
